@@ -12,7 +12,7 @@ def readHtmlFile(path):
 		if(src == None or src.find("test_data") != 0):
 			continue
 		else:
-			src = "../data/" + src
+			src = "./data/" + src
 
 		alt = imgElement.get("alt") if imgElement.get("alt") != None or imgElement.get("alt") == "" else "NONE"
 		alt = alt.replace("\n",'')
